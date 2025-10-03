@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* الشريط العلوي */
+       header {
+            background-color: #232f3e;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+         section{
+            padding: 2rem ;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0a0a0a;
+        }
+        
+        .search-bar {
+            flex: 1;
+            max-width: 600px;
+            margin: 0 20px;
+        }
+        
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+        
+        .user-actions a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        
+        /* محتوى صفحة المنتج */
+        .product-page {
+             display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        
+        /* معلومات المنتج */
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+            background-color: rgb(224, 221, 221);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: auto 500px;
+        }
+        
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #232f3e;
+        }
+        
+        .product-rating {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .stars {
+            color: #ffa41c;
+            margin-left: 10px;
+        }
+        
+        .rating-count {
+            color: #555;
+            font-size: 14px;
+        }
+        
+        .product-price {
+            font-size: 28px;
+            font-weight: bold;
+            color: #b12704;
+            margin-bottom: 20px;
+        }
+        
+        .discount {
+            background-color: #cc0c39;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        
+        .product-description {
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        /* خيارات المنتج */
+        .product-options {
+            margin-bottom: 25px;
+        }
+        
+        .option-group {
+            margin-bottom: 15px;
+        }
+        
+        .option-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .color-options, .size-options {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .color-option, .size-option {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .color-option:hover, .size-option:hover {
+            border-color: #20201f;
+        }
+        
+        .color-option.active, .size-option.active {
+            border-color: #161614;
+            background-color: #fff8f0;
+        }
+        
+        /* أزرار الشراء */
+        .purchase-actions {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+       
+          
+        .add-to-cart {
+            flex: 1;
+            background-color: #302d2a;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #201f1e;
+        }
+        
+        
+        
+        /* معلومات الشحن */
+        .shipping-info {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .shipping-info h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .shipping-info p {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        
+        /* التذييل */
+        footer {
+            background-color: #232f3e;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 20px;
+            color: #ffc400;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column a:hover {
+            color: #ff9900;
+        }
+        
+        .copyright {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #37475a;
+        }
+        
+        /* تصميم متجاوب */
+
+            .nav-links {
+                justify-content: center;
+            }
+            
+            .product-page {
+                flex-direction: column;
+            }
+            
+            .purchase-actions {
+                flex-direction: column;
+            }
+            
+            .details-tabs {
+                flex-wrap: wrap;
+            }
+    </style>
+    </style>
+</head>
+<body>
+     <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"> 
+                    <img src="./icone.webp">
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search About...">
+                </div>
+                <div class="user-actions">
+                    <a href="loma.html"><i class="fa-solid fa-user"></i> MY account</a>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart shopping</a>
+                </div>
+            </div>
+        </div>
+    </header>
+   
+    
+    <!-- محتوى صفحة المنتج -->
+    <div class="container">
+        <div class="product-page">
+                </div>
+            </div>
+            
+            <!-- معلومات المنتج -->
+            <div class="product-info">
+                <div class="product-image">
+               <img src="" width="300px" height="300px">
+                 </div>
+        <h3Rolex></h3>
+                <h1 class="product-title">Sky-Dweller Oystersteel Jubilee Black</h1>
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="product-price">£16.000.00  </div>
+                
+                <p class="product-description">
+                   Since 1905, Rolex has set the standard for precision, reliability, and timeless style. Worn by pioneers, professionals, and world leaders, each model — from the Submariner to the Daytona — blends innovation with enduring prestige. A Rolex isn’t just a timepiece; it’s a lifelong companion and a mark of achievement.
+                </p>
+                
+            
+                <!-- أزرار الشراء -->
+                <div class="purchase-actions">
+                    <button class="add-to-cart"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+                </div>
+                
+          
+        </div>
+        
+        
+           
+       
+      
+    
+    <!-- التذييل -->
+   <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Customer Service </h3>
+                    <ul>
+                        <li><a href="#">Appointments</a></li>
+                        <li><a href="#">Sell To Us</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Shipping policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="#"> Email: Info@Thewatchgallery.uk </a></li>
+                        <li><a href="#">Tel: +44 7956956088</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Office Address </h3>
+                    <ul>
+                        <li><a href="#">32 Hatton Garden London EC1N 8DH</a></li>
+                    </ul>
+                </div>
+                
+             <div class="logo"> 
+                    <img src="./icone.webp">
+                </div>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025, The Watch Gallery Powered by Shopify.
+            </div>
+        </div>
+    </footer>
+
+
+  
+</body>
+</html>
