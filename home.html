@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body {
+        margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+ background-color: black;
+ color: white;
+    }
+    h2{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+    .sidebar {
+      width: 250px;
+      height: 100vh; 
+      background-color: #141414;
+      color: #fff;
+      padding-top: 20px;
+      position: fixed; 
+      left: 0;
+      top: 0;
+   
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 20px;
+      text-decoration: none;
+     
+   
+    }
+
+    .sidebar a:hover {
+      background-color: #656769;
+      border-radius: 13px;
+     width: 180px;
+    }
+i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin: 0 5px;
+
+}
+.pic{
+        display: flex;
+       margin-left: 350px;
+        padding: 30px ;
+       
+       
+       
+      }
+      .pic img{
+       
+  width: 80px;              
+  height: 80px;
+  border: 2px solid #a3a8b3; 
+  border-radius: 50%;      
+  object-fit: contain;       
+  margin: 10px;
+  background-color: white;
+             
+}
+h4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  font-size: 12PX;
+  color: #eceef3;
+}
+.post{
+    display: flex;
+    margin-left: -730px;
+    padding: 250px 0;
+    width: 850px;
+    height: 400px;
+}
+.pr{
+    display: flex;
+    position: absolute;
+   top: 200px;
+    left: 400px;
+  width: 50px;
+  height: 50px;
+}
+.acs{
+    position: absolute;
+    top: 663px;
+    left: 400px;
+    font-size: 22px;
+    
+}
+.m1{
+    position: absolute;
+    top: 663px;
+    left: 1020px;
+    font-size: 21px;
+    
+}
+.M2{
+    position: absolute;
+    top: 690px;
+    left: 400px;
+    font-size: 17px;
+    margin: 0; 
+    padding: 0;
+    line-height: .3;
+}
+h3{
+color: #b5b4b4;   
+margin: 25px 0;
+font-size: 13px;
+}
+.pr1{
+    display: flex;
+    position: absolute;
+   top: 820px;
+    left: 400px;
+  width: 50px;
+  height: 50px;
+}
+.post1{
+    display: flex;
+    margin-left: -850px;
+    padding: 870px 0px;
+    width: 850px;
+    height: 400px;
+}
+.acs1{
+    position: absolute;
+    top: 1280px;
+    left: 400px;
+    font-size: 22px;
+}
+.m3{
+   position: absolute;
+    top: 1280px;
+    left: 1020px;
+    font-size: 21px;
+}
+.M4{
+    position: absolute;
+    top: 1310px;
+    left: 400px;
+    font-size: 17px;
+    margin: 0; 
+    padding: 0;
+    line-height: .3;
+}
+.pr2{
+    display: flex;
+    position: absolute;
+   top: 1420px;
+    left: 400px;
+  width: 50px;
+  height: 50px;
+}
+.post2{
+    display: flex;
+    margin-left: -850px;
+    padding: 1470px 0px;
+    width: 850px;
+    height: 400px;
+}
+.acs2{
+    position: absolute;
+    top: 1882px;
+    left: 400px;
+    font-size: 22px;
+}
+.m4{
+   position: absolute;
+    top: 1882px;
+    left: 1020px;
+    font-size: 21px;
+}
+.M5{
+    position: absolute;
+    top: 1913px;
+    left: 400px;
+    font-size: 17px;
+    margin: 0; 
+    padding: 0;
+    line-height: .3;
+}
+.pr3{
+    display: flex;
+    position: absolute;
+   top: 2050px;
+    left: 400px;
+  width: 50px;
+  height: 50px;
+}
+.post3{
+    display: flex;
+    margin-left: -850px;
+    padding: 2100px 0px;
+    width: 850px;
+    height: 400px;
+}
+.acs3{
+    position: absolute;
+    top: 2510px;
+    left: 400px;
+    font-size: 22px;
+}
+.m5{
+   position: absolute;
+    top: 2510px;
+    left: 1020px;
+    font-size: 21px;
+}
+.M6{
+    position: absolute;
+    top: 2540px;
+    left: 400px;
+    font-size: 17px;
+    margin: 0; 
+    padding: 0;
+    line-height: .3;
+}
+.pr4{
+    display: flex;
+    position: absolute;
+   top: 2680px;
+    left: 400px;
+  width: 50px;
+  height: 50px;
+}
+.post4{
+    display: flex;
+    margin-left: -850px;
+    padding: 2730px 0px;
+    width: 850px;
+    height: 400px;
+}
+.acs4{
+    position: absolute;
+    top: 3140px;
+    left: 400px;
+    font-size: 22px;
+}
+.m6{
+   position: absolute;
+    top: 3140px;
+    left: 1020px;
+    font-size: 21px;
+}
+.M7{
+    position: absolute;
+    top: 3170px;
+    left: 400px;
+    font-size: 17px;
+    margin: 0; 
+    padding: 0;
+    line-height: .3;
+}
+
+</style>
+</head>
+<body>
+    <div class="sidebar">
+    <h2 style="text-align:center;"><img src="download (1).png" alt=""></i>instagram</h2>
+    <div class="icon">
+    <a href="home.html"><i class="fa-solid fa-house"></i>Home</a>
+    <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+    <a href=""><i class="fa-regular fa-compass"></i>Explore</a>
+    <a href="reels.html"><i class="fa-solid fa-clapperboard"></i>Reels</a>
+    <a href="#"><i class="fa-regular fa-paper-plane"></i>Messages</a>
+    <a href="#"><i class="fa-regular fa-heart"></i>Notifications</a>
+    <a href="create.html"><i class="fa-regular fa-square-plus"></i>Create</a>
+    <a href="index.html"><i class="fa-regular fa-circle-user"></i>Profile</a>
+    <a href=""><i class="fa-solid fa-bars"></i>More</a>
+    <a href=""><i class="fa-brands fa-meta"></i></i>Also from Meta</a>
+  </div>
+  </div>
+
+    <div class="pic">
+  <div>
+  <img src="./433466598_380049914840571_4431583835928038781_n.jpeg" alt="1" width="120px">
+  <h4>AIGNER</h4>
+  </div>
+  <div>
+  <img src="./434881296_972085321301719_5611071434640972730_n.jpeg" alt="2" width="120px">
+  <h4>SMART</h4>
+  </div>
+    <div>
+      <img src="./435246289_360843566274190_1674636216191004494_n.jpeg" alt="3" width="120px">
+      <h4>TORY BURCH</h4>
+    </div>
+    <div>
+      <img src="./438963152_803328545158406_4561261453418498457_n.jpeg" alt="" width="120px">
+      <h4>OMEGA</h4>
+    </div>
+    <div>
+  <img src="./449312593_3841888686023312_547994108236493591_n.jpeg" alt="" width="120px">
+  <h4>ROLEX</h4>
+  </div>
+  <div>
+  <img src="./454356475_461569336852376_6402252191245974786_n.jpeg" alt="" width="120px">
+<h4>OMEGA</h4>
+  </div>
+  <div>
+    <img src="./471569159_565449006412520_3433714992094822990_n.jpeg" alt="" width="120px">
+    <h4>VERSACE</h4>
+  </div>
+</div>
+
+<div class="pr">
+   <img src="./503996913_3328565287291958_2236984476643829878_n.jpg" alt="" > <h4>thewatchgallwrylondon</h4>
+    </div>
+    <div class="post">
+    <img src="WhatsApp Image 2025-09-24 at 21.30.44_629bc094.jpg" alt="" width="650px">
+    </div>
+    <div class="acs">
+    <i class="fa-regular fa-heart">8</i>
+    <i class="fa-regular fa-comment">1</i>
+    <i class="fa-regular fa-paper-plane">2</i>
+    </div>
+    <div class="m1">
+<i class="fa-regular fa-bookmark"></i>
+    </div>
+    <div class="M2">
+        <p>✨ Discover Timeless Luxury ✨</p>
+        <P>Step into elegance with the Ballon Bleu de Cartier</P>
+       <P> With its diamond-set bezel, Roman numeral dial, and signature sapphire crown,</P>
+       <P>this watch is more than timekeeping — it’s pure sophistication.</p>
+        <h3>September 5</h3>
+    </div>
+    
+    
+
+<div class="pr1">
+   <img src="./503996913_3328565287291958_2236984476643829878_n.jpg" alt="" > <h4>thewatchgallwrylondon</h4>
+    </div>
+    <div class="post1">
+    <img src="WhatsApp Image 2025-09-24 at 21.30.45_3eb1e270.jpg" alt="" width="650px">
+    </div>
+    <div class="acs1">
+    <i class="fa-regular fa-heart">8</i>
+    <i class="fa-regular fa-comment">1</i>
+    <i class="fa-regular fa-paper-plane">2</i>
+    </div>
+    <div class="m3">
+<i class="fa-regular fa-bookmark"></i>
+    </div>
+    <div class="M4">
+        <p>✨ Shine with timeless elegance ✨</p>
+        <P>The Rolex Cellini Gold Watch – where luxury meets sophistication.</P>
+       <P>A perfect statement piece for every occasion.</P>
+        <h3>September 5</h3>
+    </div>
+
+    
+
+<div class="pr2">
+   <img src="./503996913_3328565287291958_2236984476643829878_n.jpg" alt="" > <h4>thewatchgallwrylondon</h4>
+    </div>
+    <div class="post2">
+    <img src="WhatsApp Image 2025-09-24 at 21.30.47_68004908.jpg" alt="" width="650px">
+    </div>
+    <div class="acs2">
+    <i class="fa-regular fa-heart">8</i>
+    <i class="fa-regular fa-comment">1</i>
+    <i class="fa-regular fa-paper-plane">2</i>
+    </div>
+    <div class="m4">
+<i class="fa-regular fa-bookmark"></i>
+    </div>
+    <div class="M5">
+        <p>✨ Dior Women’s Rose Gold Watch ✨</p>
+        <P>Elegant design with crystal markers & black bezel for a timeless luxury look.</P>
+        <p>A touch of luxury that completes your elegance and highlights your refined style </p>
+        <p>in every moment.</p>
+        <h3>September 5</h3>
+    </div>
+
+    <div class="pr3">
+   <img src="./503996913_3328565287291958_2236984476643829878_n.jpg" alt="" > <h4>thewatchgallwrylondon</h4>
+    </div>
+    <div class="post3">
+    <img src="WhatsApp Image 2025-09-25 at 19.37.18_cac9b3ca.jpg" alt="" width="650px">
+    </div>
+    <div class="acs3">
+    <i class="fa-regular fa-heart">8</i>
+    <i class="fa-regular fa-comment">1</i>
+    <i class="fa-regular fa-paper-plane">2</i>
+    </div>
+    <div class="m5">
+<i class="fa-regular fa-bookmark"></i>
+    </div>
+    <div class="M6">
+        <p>✨ Michael Kors women's watch.Design ✨</p>
+        <P>A stylish chronograph watch.Materials: Rose gold-tone metal with white ceramic links.</P>
+        <p>Bezel: Encrusted with sparkling crystals.</p>
+        <p>Dial: Champagne-colored with a date display.</p>
+        <h3>September 5</h3>
+    </div>
+
+<div class="pr4">
+   <img src="./503996913_3328565287291958_2236984476643829878_n.jpg" alt="" > <h4>thewatchgallwrylondon</h4>
+    </div>
+    <div class="post4">
+    <img src="WhatsApp Image 2025-09-25 at 19.55.44_52c5a724.jpg" alt="" width="650px">
+    </div>
+    <div class="acs4">
+    <i class="fa-regular fa-heart">8</i>
+    <i class="fa-regular fa-comment">1</i>
+    <i class="fa-regular fa-paper-plane">2</i>
+    </div>
+    <div class="m6">
+<i class="fa-regular fa-bookmark"></i>
+    </div>
+    <div class="M7">
+        <p>✨ Luxury Two-Tone Watch ✨</p>
+        <P>A stylish blend of stainless steel and yellow gold with a black dial and a classic fluted bezel. </P>
+        <p> The two-tone Jubilee bracelet adds comfort and elegance. Perfect for any occasion.</p>
+        <h3>September 5</h3>
+    </div>
+
+
+    
+</body>
+</html>

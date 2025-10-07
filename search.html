@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+      <style>
+body{
+  margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+ background-color: black;
+ color: white;
+}
+h2{
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+    .sidebar {
+      width: 250px;
+      height: 100vh; 
+      background-color: #141414;
+      color: #fff;
+      padding-top: 20px;
+      position: fixed; 
+      left: 0;
+      top: 0;
+   
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 20px;
+      text-decoration: none;
+     
+   
+    }
+
+    .sidebar a:hover {
+      background-color: #656769;
+      border-radius: 13px;
+     width: 180px;
+    }
+i{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin: 0 5px;
+
+}
+input{
+    background-color: #474745;
+   color: #000;
+    border-radius: 15px;
+    border: 2px solid rgb(82, 81, 82);
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    width: 600px;
+    height: 39px;
+    font-size: 17px;
+  }
+  
+  .product-card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 100px;
+      left: 910px;
+      height: 165px;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    
+
+    .product-card1 {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 100px;
+      left: 701px;
+      height: 165px;
+    }
+
+    .product-card1:hover {
+      transform: scale(1.05);
+    }
+
+    
+    .product-card2 {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 100px;
+      left: 493px;
+      height: 165px;
+    }
+
+    .product-card2:hover {
+      transform: scale(1.05);
+    }
+
+    
+    .product-card3 {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 275px;
+      left: 910px;
+      height: 165px;
+    }
+
+    .product-card3:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card4 {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 275px;
+      left: 493px;
+      height: 165px;
+    }
+
+    .product-card4:hover {
+      transform: scale(1.05);
+    }
+    .product-card5 {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 275px;
+      left: 701px;
+      height: 165px;
+    }
+
+    .product-card5:hover {
+      transform: scale(1.05);
+    }
+.product-card6 {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 450px;
+      left: 910px;
+      height: 165px;
+    }
+
+    .product-card6:hover {
+      transform: scale(1.05);
+    }
+    .product-card7 {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 450px;
+      left: 701px;
+      height: 165px;
+    }
+
+    .product-card7:hover {
+      transform: scale(1.05);
+    }
+    .product-card8 {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+      position: absolute;
+      top: 450px;
+      left: 493px;
+      height: 165px;
+    }
+
+    .product-card8:hover {
+      transform: scale(1.05);
+    }
+      </style>
+</head>
+      <body>
+        <div class="sidebar">
+    <h2 style="text-align:center;"><img src="download (1).png" alt=""></i>instagram</h2>
+    <div class="icon">
+    <a href="home.html"><i class="fa-solid fa-house"></i>Home</a>
+    <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+    <a href="#"><i class="fa-regular fa-compass"></i>Explore</a>
+    <a href="reels.html"><i class="fa-solid fa-clapperboard"></i>Reels</a>
+    <a href="#"><i class="fa-regular fa-paper-plane"></i>Messages</a>
+    <a href="#"><i class="fa-regular fa-heart"></i>Notifications</a>
+    <a href="create.html"><i class="fa-regular fa-square-plus"></i>Create</a>
+    <a href="index.html"><i class="fa-regular fa-circle-user"></i>Profile</a>
+    <a href=""><i class="fa-solid fa-bars"></i>More</a>
+    <a href=""><i class="fa-brands fa-meta"></i></i>Also from Meta</a>
+  </div>
+  </div>
+ <div class="product-card">
+<img src="WhatsApp Image 2025-09-24 at 21.30.44_629bc094.jpg" alt="" width="200px" height="200px">
+ </div>
+
+<div class="product-card1">
+<img src="WhatsApp Image 2025-09-24 at 21.30.45_3eb1e270.jpg" alt="" width="200px" height="200px">
+ </div>
+
+<div class="product-card2">
+<img src="WhatsApp Image 2025-09-24 at 21.30.47_68004908.jpg" alt="" width="200px" height="200px">
+ </div>
+
+<div class="product-card3">
+<img src="WhatsApp Image 2025-09-25 at 19.55.44_52c5a724.jpg" alt="" width="200px" height="200px">
+ </div>
+
+ <div class="product-card4">
+<img src="WhatsApp Image 2025-09-25 at 11.47.16_901454e7.jpg" alt="" width="200px" height="200px">
+ </div>
+
+ <div class="product-card5">
+<img src="WhatsApp Image 2025-09-24 at 21.31.10_3e19defe.jpg" alt="" width="200px" height="200px">
+ </div>
+
+ <div class="product-card6">
+<img src="WhatsApp Image 2025-09-24 at 21.31.15_3669fcec - Shortcut.lnk" alt="" width="200px" height="200px">
+ </div>
+
+  <div class="product-card7">
+<img src="WhatsApp Image 2025-09-24 at 21.31.13_8107a207.jpg" alt="" width="200px" height="200px">
+ </div>
+
+  <div class="product-card8">
+<img src="WhatsApp Image 2025-09-24 at 21.31.11_32646770.jpg" alt="" width="200px" height="200px">
+ </div>
+
+  <input type="text" placeholder=" 🔎 search ">
+
+      </body>
+</html>
